@@ -1,0 +1,36 @@
+html {
+  height: 100%;
+}
+html .flag {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  border: 1px solid black;
+}
+html #cuba {
+  background-color: white;
+}
+html #cuba p {
+  background-color: #0e359e;
+  height: 40px;
+  margin-bottom: 40px;
+}
+html #cuba i {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 0px;
+  width: 0px;
+  border: 100px solid transparent;
+  border-left-color: red;
+}
+html #cuba a {
+  position: absolute;
+  top: 0px;
+  left: 12.5px;
+  height: 100%;
+  width: 100px;
+  color: white;
+  line-height: 200px;
+  font-size: 66.66666667px;
+}
