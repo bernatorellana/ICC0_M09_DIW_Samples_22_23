@@ -7,8 +7,32 @@ html .flag {
   position: relative;
   border: 1px solid black;
 }
-html #cuba {
+html .flag:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
   background-color: white;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+14,000000+28,000000+42,000000+56,000000+73,000000+88&0.3+0,0+14,0.3+27,0+43,0.3+56,0+72,0.3+87 */
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 14%, rgba(0, 0, 0, 0.3) 27%, rgba(0, 0, 0, 0.28) 28%, rgba(0, 0, 0, 0.02) 42%, rgba(0, 0, 0, 0) 43%, rgba(0, 0, 0, 0.3) 56%, rgba(0, 0, 0, 0) 72%, rgba(0, 0, 0, 0.02) 73%, rgba(0, 0, 0, 0.3) 87%, rgba(0, 0, 0, 0.3) 88%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 14%, rgba(0, 0, 0, 0.3) 27%, rgba(0, 0, 0, 0.28) 28%, rgba(0, 0, 0, 0.02) 42%, rgba(0, 0, 0, 0) 43%, rgba(0, 0, 0, 0.3) 56%, rgba(0, 0, 0, 0) 72%, rgba(0, 0, 0, 0.02) 73%, rgba(0, 0, 0, 0.3) 87%, rgba(0, 0, 0, 0.3) 88%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 14%, rgba(0, 0, 0, 0.3) 27%, rgba(0, 0, 0, 0.28) 28%, rgba(0, 0, 0, 0.02) 42%, rgba(0, 0, 0, 0) 43%, rgba(0, 0, 0, 0.3) 56%, rgba(0, 0, 0, 0) 72%, rgba(0, 0, 0, 0.02) 73%, rgba(0, 0, 0, 0.3) 87%, rgba(0, 0, 0, 0.3) 88%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4d000000', endColorstr='#4d000000', GradientType=1);
+  /* IE6-9 */
+}
+html #japo p {
+  background-color: red;
+  border-radius: 50%;
+  height: 140px;
+  width: 140px;
+  margin: 200px auto;
+  margin-top: 30px;
 }
 html #cuba p {
   background-color: #0e359e;
@@ -33,4 +57,39 @@ html #cuba a {
   color: white;
   line-height: 200px;
   font-size: 66.66666667px;
+}
+html #denmark1 {
+  background-color: red;
+}
+html #denmark1 p {
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  margin-top: 80px;
+}
+html #denmark1 a {
+  position: absolute;
+  top: 0px;
+  left: 30%;
+  display: block;
+  width: 40px;
+  height: 100%;
+  background-color: white;
+}
+html #denmark2 {
+  background-color: white;
+}
+html #denmark2 div {
+  display: flex;
+  height: 80px;
+  margin-bottom: 40px;
+}
+html #denmark2 div p {
+  width: 30%;
+  height: 100%;
+  margin-right: 40px;
+  background-color: red;
+}
+html #denmark2 div p:nth-child(2) {
+  background-color: green;
 }

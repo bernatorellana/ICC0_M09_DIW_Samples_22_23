@@ -4,13 +4,43 @@ html {
          height:100%;
 
    .flag {
+      position: relative;
       width: (1.5 * @alsada);
       height: @alsada;
       position:relative;
       border:1px solid black;
+      
+      &:after {
+         content:"";
+         display: block;
+         position: absolute;
+         top: 0px;
+         left: 0px;
+         width: 100%;
+         height: 100%;
+         background-color: white;
+         /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+14,000000+28,000000+42,000000+56,000000+73,000000+88&0.3+0,0+14,0.3+27,0+43,0.3+56,0+72,0.3+87 */
+background: -moz-linear-gradient(left,  rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 14%, rgba(0,0,0,0.3) 27%, rgba(0,0,0,0.28) 28%, rgba(0,0,0,0.02) 42%, rgba(0,0,0,0) 43%, rgba(0,0,0,0.3) 56%, rgba(0,0,0,0) 72%, rgba(0,0,0,0.02) 73%, rgba(0,0,0,0.3) 87%, rgba(0,0,0,0.3) 88%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 14%,rgba(0,0,0,0.3) 27%,rgba(0,0,0,0.28) 28%,rgba(0,0,0,0.02) 42%,rgba(0,0,0,0) 43%,rgba(0,0,0,0.3) 56%,rgba(0,0,0,0) 72%,rgba(0,0,0,0.02) 73%,rgba(0,0,0,0.3) 87%,rgba(0,0,0,0.3) 88%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 14%,rgba(0,0,0,0.3) 27%,rgba(0,0,0,0.28) 28%,rgba(0,0,0,0.02) 42%,rgba(0,0,0,0) 43%,rgba(0,0,0,0.3) 56%,rgba(0,0,0,0) 72%,rgba(0,0,0,0.02) 73%,rgba(0,0,0,0.3) 87%,rgba(0,0,0,0.3) 88%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', endColorstr='#4d000000',GradientType=1 ); /* IE6-9 */
+
+      }
+   }
+
+   @midaPunt:(@alsada*0.7);
+   #japo {
+      p {
+         background-color: red;
+         border-radius: 50%;
+         height:@midaPunt;
+         width: @midaPunt;
+         margin: (@alsada) auto;
+         margin-top: ((@alsada - @midaPunt) / 2);
+      }
    }
    #cuba {
-         background-color: white;
+
          p{
             background-color: rgb(14, 53, 158);
             height: (@alsada / 5);
@@ -35,6 +65,42 @@ html {
             color:white;
             line-height: @alsada;
             font-size: (@alsada / 3);
+         }
+      }
+      @barra:@alsada*0.2;
+      #denmark1{
+         background-color: red;
+         p {
+            width: 100%;
+            height: @barra;
+            background-color: white;
+            margin-top: ((@alsada - @barra) / 2);
+         }
+         a {
+            position:absolute;
+            top:0px;
+            left:30%;
+            display: block;
+            width: @barra;
+            height: 100%;
+            background-color: white;
+         }
+      }
+      #denmark2{
+         background-color: white;
+         div {
+            display: flex;
+            height: ((@alsada - @barra) / 2);
+            margin-bottom: @barra;
+            p{
+               width: 30%;
+               height: 100%;
+               margin-right: @barra;
+               background-color: red;
+            }
+            p:nth-child(2) {
+               background-color: green;
+            }
          }
       }
 }

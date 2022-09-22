@@ -1,0 +1,57 @@
+div {
+  display: block;
+  width: 200px;
+  background-color: #dbd4e2;
+  transition: all 1s;
+  margin: 40px;
+  padding: 20px;
+}
+div:hover {
+  background-color: #483759;
+}
+a {
+  display: block;
+}
+a[href$="pdf"],
+a[href$="xls"] {
+  background-size: 20px;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+a[href$="pdf"] {
+  background-image: url(images/pdf.png);
+}
+a[href$="xls"] {
+  background-image: url(images/excel.png);
+}
+a:focus {
+  border: 1px solid red;
+}
+input:focus {
+  background-color: aqua;
+}
+div::first-letter {
+  font-size: 5em;
+  display: block;
+  float: left;
+}
+div::first-line {
+  font-weight: bold;
+}
+div {
+  position: relative;
+  padding: 50px;
+  padding-top: 100px;
+}
+div:before {
+  display: block;
+  width: 0px;
+  height: 0px;
+  border: 30px solid red;
+  border-left-color: white;
+  border-top-color: white;
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
