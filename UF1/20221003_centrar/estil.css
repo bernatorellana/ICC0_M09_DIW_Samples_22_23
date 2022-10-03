@@ -1,0 +1,46 @@
+html {
+  height: 100%;
+}
+html div {
+  margin: 0px auto;
+  width: 50%;
+  height: 50px;
+}
+html div:nth-child(1) {
+  width: 10%;
+  background-color: red;
+}
+html div:nth-child(2) {
+  width: 20%;
+  background-color: green;
+}
+html div:nth-child(3) {
+  width: 30%;
+  background-color: blue;
+}
+html div:nth-child(4) {
+  width: 40%;
+  background-color: orange;
+}
+html div:nth-child(5) {
+  width: 50%;
+  background-color: lime;
+}
+html ul {
+  width: 300px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+}
+html ul li {
+  background-color: aqua;
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  margin: 10px;
+}
+html ul li:nth-of-type(1) {
+  color: green;
+}

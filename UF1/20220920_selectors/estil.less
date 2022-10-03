@@ -1,66 +1,84 @@
+#cat_milaifontanals_diw {
+   div.prova{
+      display: block;
+      width: 200px;
+      background-color: rgb(219, 212, 226);
+      transition: all 1s;
+      margin: 40px;
+      padding: 20px;
 
-div{
-   display: block;
-   width: 200px;
-   background-color: rgb(219, 212, 226);
-   transition: all 1s;
-   margin: 40px;
-   padding: 20px;
+      &:hover {
+         background-color: rgb(72, 55, 89);   
+      }
+   }  
 
-   &:hover {
-      background-color: rgb(72, 55, 89);   
+   a{
+      display: block;
+      &[href$="pdf"], &[href$="xls"]{
+         background-size: 20px;
+         background-repeat: no-repeat;
+         padding-left: 30px;
+      }
+      
+      &[href$="pdf"]{
+         background-image: url(images/pdf.png);
+      }
+      &[href$="xls"]{
+            background-image: url(images/excel.png);
+      }
+
+      &:focus {
+         border:1px solid red;
+      }
+
    }
-}  
 
-a{
-   display: block;
-   &[href$="pdf"], &[href$="xls"]{
-      background-size: 20px;
-      background-repeat: no-repeat;
-      padding-left: 30px;
-   }
-   
-   &[href$="pdf"]{
-      background-image: url(images/pdf.png);
-   }
-   &[href$="xls"]{
-         background-image: url(images/excel.png);
+   input:focus {
+      background-color: aqua;
    }
 
-   &:focus {
-      border:1px solid red;
+   div::first-letter {
+      font-size:5em;
+      display: block;
+      float: left;
    }
 
-}
+   div::first-line{
+      font-weight: bold;
+   }
 
-input:focus {
-   background-color: aqua;
-}
+   div.prova {
+      position: relative;
+      padding: 50px;
+      padding-top: 100px;
+      background-color: blue;
+   }
+   div:before{
+      display: block;
+      width: 0px;
+      height:0px;
+      border:30px solid red;
+      border-left-color:white;
+      border-top-color:white;
+      content: "";
+      position: absolute;
+      top:0px;left: 0px;
+   }
 
-div::first-letter {
-   font-size:5em;
-   display: block;
-   float: left;
+   ul {
+      li {
+         background-color: aquamarine;
+         display: block;
+         padding: 20px;
+         &:nth-child(2n){
+            background-color: orange;
+         }
+         &:nth-child(3n){
+            background-color: aqua;
+         }
+         &:last-child{
+            font-weight: 900;
+         }
+      }
+   }
 }
-
-div::first-line{
-   font-weight: bold;
-}
-
-div {
-   position: relative;
-   padding: 50px;
-   padding-top: 100px;
-}
-div:before{
-   display: block;
-   width: 0px;
-   height:0px;
-   border:30px solid red;
-   border-left-color:white;
-   border-top-color:white;
-   content: "";
-   position: absolute;
-   top:0px;left: 0px;
-}
-

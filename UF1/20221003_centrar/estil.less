@@ -1,0 +1,42 @@
+
+.hanoi(@numero, @color){
+   &:nth-child(@{numero}) {
+      width: 10% * @numero;
+      background-color: @color;
+   }
+}
+
+html {
+         height:100%;         
+         div{
+            margin: 0px auto;
+            width: 50%;
+            height: 50px;
+            .hanoi(1,red);
+            .hanoi(2,green);
+            .hanoi(3,blue);
+            .hanoi(4,orange);
+            .hanoi(5,lime);
+         }
+
+         ul {
+            width: 300px;
+            
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 60px;
+            
+            li {
+               background-color: aqua;   
+               text-align: center;
+               height: 100px;
+               line-height: 100px;
+               margin: 10px;
+               &:nth-of-type(1) {
+                  color:green;
+               }
+            }
+         }
+}

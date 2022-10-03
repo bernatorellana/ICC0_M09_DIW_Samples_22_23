@@ -1,4 +1,4 @@
-div {
+#cat_milaifontanals_diw div.prova {
   display: block;
   width: 200px;
   background-color: #dbd4e2;
@@ -6,44 +6,45 @@ div {
   margin: 40px;
   padding: 20px;
 }
-div:hover {
+#cat_milaifontanals_diw div.prova:hover {
   background-color: #483759;
 }
-a {
+#cat_milaifontanals_diw a {
   display: block;
 }
-a[href$="pdf"],
-a[href$="xls"] {
+#cat_milaifontanals_diw a[href$="pdf"],
+#cat_milaifontanals_diw a[href$="xls"] {
   background-size: 20px;
   background-repeat: no-repeat;
   padding-left: 30px;
 }
-a[href$="pdf"] {
+#cat_milaifontanals_diw a[href$="pdf"] {
   background-image: url(images/pdf.png);
 }
-a[href$="xls"] {
+#cat_milaifontanals_diw a[href$="xls"] {
   background-image: url(images/excel.png);
 }
-a:focus {
+#cat_milaifontanals_diw a:focus {
   border: 1px solid red;
 }
-input:focus {
+#cat_milaifontanals_diw input:focus {
   background-color: aqua;
 }
-div::first-letter {
+#cat_milaifontanals_diw div::first-letter {
   font-size: 5em;
   display: block;
   float: left;
 }
-div::first-line {
+#cat_milaifontanals_diw div::first-line {
   font-weight: bold;
 }
-div {
+#cat_milaifontanals_diw div.prova {
   position: relative;
   padding: 50px;
   padding-top: 100px;
+  background-color: blue;
 }
-div:before {
+#cat_milaifontanals_diw div:before {
   display: block;
   width: 0px;
   height: 0px;
@@ -54,4 +55,18 @@ div:before {
   position: absolute;
   top: 0px;
   left: 0px;
+}
+#cat_milaifontanals_diw ul li {
+  background-color: aquamarine;
+  display: block;
+  padding: 20px;
+}
+#cat_milaifontanals_diw ul li:nth-child(2n) {
+  background-color: orange;
+}
+#cat_milaifontanals_diw ul li:nth-child(3n) {
+  background-color: aqua;
+}
+#cat_milaifontanals_diw ul li:last-child {
+  font-weight: 900;
 }
