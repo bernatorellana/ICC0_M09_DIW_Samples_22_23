@@ -1,0 +1,33 @@
+
+html {
+         height:100%;
+
+   .capsa {
+      border:2px solid blue;
+      main{
+         padding:40px 0px 40px 0px;
+         width:40%;
+         margin:0px auto;
+         position:relative;
+         &:after, &:before {
+            content: "";
+            display: block;
+            position:absolute;
+            top:50%;
+            right:137.5%;
+            width: 20.0%;
+            background-repeat: no-repeat;
+            height: 10%;
+            background-size: contain;
+            background-image: url(images/celtic_knot.jpg);
+            transform:translate(+50%, -50%);
+         }
+         &:before {
+            left:137.5%;
+            transform:translate(-50%, -50%);
+            transform:scaleX(-1);
+         }
+      }
+
+   }
+}
