@@ -1,0 +1,51 @@
+
+
+.colocaNumero(@num){
+   @angle:@num * 30deg;
+   @nummens:@num;
+   li:nth-child(@{nummens}){
+      bottom:percentage(0.9 * cos(@angle)) ;
+      left:percentage(0.9 * sin(@angle));
+  }
+}
+
+
+body {
+         height:100vh;
+         width: 100%;
+         display: flex;
+         align-items: center;
+
+         .clock{
+            position: relative;
+            width: 50%;
+            height: 0px;
+            padding-bottom: 50%;
+            background-color: aquamarine;
+            border-radius: 50%;
+            ul {
+               position:absolute;
+               width: 50%;
+               height: 50%;
+               left: 50%;
+               top: 0%;
+               li {
+                  position: absolute;
+                  transform: translate(-50%,+50%);
+               }
+               .colocaNumero(1);
+               .colocaNumero(2);
+               .colocaNumero(3);
+               .colocaNumero(4);
+               .colocaNumero(5);
+               .colocaNumero(6);
+               .colocaNumero(7);
+               .colocaNumero(8);
+               .colocaNumero(9);
+               .colocaNumero(10);
+               .colocaNumero(11);
+               .colocaNumero(12);
+            }
+         }
+         
+}

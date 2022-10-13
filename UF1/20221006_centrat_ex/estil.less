@@ -3,12 +3,54 @@ html {
          height:100%;
 
    .capsa {
-      border:2px solid blue;
+      margin:30px;
+      border:2px solid gray;
+      //background-color: rgb(253, 251, 251);
+      //background: rgb(238,174,202);
+      //background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); 
+      border-radius: 30px;
+      position: relative;
+      @marginet:15px;
+      &:after, &:before, i:after,i:before{
+         content:"";
+         display: block;
+         background-image: url(images/celtic_corner.gif);
+         position: absolute;
+         top:-@marginet;
+         left: -@marginet;
+         width: 120px;
+         height: 120px;
+         transform: rotate(90deg);
+      }
+      &:before {
+         left: auto;
+         right:-@marginet;
+         transform: rotate(180deg);
+      }
+      i:after{
+         bottom:-@marginet;
+         top:auto;
+         transform: rotate(0deg);
+      }
+      i:before{
+         bottom:-@marginet;
+         top:auto;
+         left: auto;
+         right:-@marginet;
+         transform: rotate(-90deg);
+      }
       main{
+         text-align: justify;
+         font-family: Georgia, 'Times New Roman', Times, serif;
+         line-height: 22px;
+         font-size: 14px;
          padding:40px 0px 40px 0px;
          width:40%;
          margin:0px auto;
          position:relative;
+         p{
+            margin-bottom: 15px;
+         }
          &:after, &:before {
             content: "";
             display: block;
@@ -24,8 +66,7 @@ html {
          }
          &:before {
             left:137.5%;
-            transform:translate(-50%, -50%);
-            transform:scaleX(-1);
+            transform:translate(-50%, -50%) scaleX(-1);            
          }
       }
 

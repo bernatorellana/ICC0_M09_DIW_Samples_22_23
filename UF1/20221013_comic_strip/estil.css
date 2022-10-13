@@ -1,0 +1,82 @@
+html {
+  height: 100%;
+  background-image: url(images/background.jpg);
+  background-size: cover;
+}
+html .comic-strip {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+html .comic-strip:before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: red;
+  border: 20px solid black;
+  top: calc(100% + 30px + 125px);
+  left: 0px;
+}
+html .comic-strip .comic {
+  flex: 1;
+  position: relative;
+  display: block;
+  border-radius: 50%;
+  background-color: red;
+  padding: 40px 50px 40px 50px;
+  max-width: 200px;
+  margin-left: 50px;
+}
+html .comic-strip .comic:after,
+html .comic-strip .comic:before {
+  display: block;
+  content: "";
+  position: absolute;
+}
+html .comic-strip .comic:before {
+  width: 0px;
+  height: 0px;
+  border: 40px solid transparent;
+  border-top-color: red;
+  top: calc(100% - 10px);
+  left: calc(50% - 40px);
+  transform: translateX(-20px) rotate(15deg) scaleX(0.5);
+}
+html .comic-strip .comic:after {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 250px;
+  background-color: aqua;
+  top: calc(100% + 30px);
+  left: -20px;
+}
+html .comic-strip .comic.batman {
+  background-color: #ef6e47;
+}
+html .comic-strip .comic.batman:before {
+  border-top-color: #ef6e47;
+}
+html .comic-strip .comic.batman:after {
+  background-image: url("images/batman.png");
+}
+html .comic-strip .comic.joker {
+  background-color: #a2c7f1;
+}
+html .comic-strip .comic.joker:before {
+  border-top-color: #a2c7f1;
+}
+html .comic-strip .comic.joker:after {
+  background-image: url("images/joker.png");
+}
+html .comic-strip .comic.harvey {
+  background-color: #d1e91a;
+}
+html .comic-strip .comic.harvey:before {
+  border-top-color: #d1e91a;
+}
+html .comic-strip .comic.harvey:after {
+  background-image: url("images/hd.png");
+}
