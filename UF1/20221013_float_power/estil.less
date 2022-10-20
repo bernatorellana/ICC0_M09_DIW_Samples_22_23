@@ -1,0 +1,25 @@
+
+html {
+         height:100%;
+         .floating {
+            border:30px solid red;
+            background-color: aquamarine;
+            overflow: auto;
+            li {float:left;}
+         }
+         .flex {
+
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+               li{
+                  order:3;
+               }
+            li:nth-child(2){
+               order:1;
+            }
+            li:nth-child(3){
+               order:4;
+            }
+         }
+}

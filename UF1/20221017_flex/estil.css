@@ -1,0 +1,105 @@
+html {
+  height: 100%;
+}
+html body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+html body div {
+  flex: 1;
+}
+html body header {
+  display: flex;
+  flex-direction: row;
+}
+html body header nav {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+}
+html body header nav ul {
+  flex: 1;
+  justify-content: space-evenly;
+  display: flex;
+}
+html body header aside ul {
+  display: flex;
+}
+html body > footer {
+  display: flex;
+}
+html body > footer section {
+  padding: 7.14285714%;
+}
+html body #main_container {
+  display: flex;
+}
+html body #main_container aside.left,
+html body #main_container aside.right,
+html body #main_container main {
+  padding: 20px;
+}
+html body #main_container aside.left,
+html body #main_container aside.right {
+  flex: 15;
+}
+html body #main_container aside.left ul {
+  overflow: hidden;
+  transform: scaleY(1);
+  transform-origin: 50% 0%;
+  transition: all 1s;
+}
+html body #main_container aside.left .plegat ul {
+  transition: all 1s;
+  transform: scaleY(0);
+  height: 0px;
+}
+html body #main_container aside.left nav li {
+  margin-left: 10px;
+  padding: 5px;
+}
+html body #main_container main {
+  flex: 70;
+}
+html body #main_container main h1 {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+html body #main_container main ul {
+  display: flex;
+  overflow: hidden;
+}
+html body #main_container main ul li {
+  flex: 1;
+}
+html body #main_container main article h2,
+html body #main_container main article h3 {
+  font-size: 1.5em;
+}
+html body #main_container main article div {
+  display: flex;
+  gap: 10px 10px;
+  flex-wrap: wrap;
+}
+html body #main_container main article div section {
+  padding: 10px;
+  width: calc(33% - 10px);
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+html body #main_container main article div section img {
+  float: left;
+  margin: 15px;
+}
+html body #main_container main article div section .price {
+  display: block;
+  border: 1px solid black;
+  width: 100px;
+  padding: 10px;
+  float: right;
+  position: relative;
+  left: 11px;
+  top: 11px;
+}
