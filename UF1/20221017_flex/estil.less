@@ -86,6 +86,7 @@ html {
                      }
                   }
                   article {
+                     
                      h2, h3 {
                         font-size:1.5em;
                      }
@@ -95,6 +96,18 @@ html {
                         gap: 10px 10px;
                         flex-wrap: wrap;
                         section {
+                           transition: all 1s;
+                           position:relative;
+                              top:0px;
+                              left:0px;
+                              background-color: blue;
+                           &:hover {
+                              transition: all 1s;
+                              position:relative;
+                              top:10px;
+                              left:10px;
+                              background-color: red;
+                           }
                            padding: 10px;
                            width: calc( 33% - 10px);
                            box-sizing: border-box;

@@ -1,0 +1,101 @@
+
+html {
+   height:100vh;
+   width: 100vw;
+
+   //@amplada: 50%;
+   --amplada: 50%;
+   body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      main {
+         width: var(--amplada);
+         height: 0px;
+         padding-top: var(--amplada);
+         position: relative;
+
+         .tauler {
+            border: 2px solid black;
+            position: absolute;
+            top:0px;left: 0px;
+            display:grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: repeat(10, 1fr);
+            width: 100%;
+            height: 100%;
+            figure {
+               font-size:40px;
+               color:rebeccapurple;
+               grid-column: calc(var(--columna) + 1);
+               grid-row: calc(var(--fila) + 1);
+            }
+            nav {
+               border: 2px solid black;
+               background-color: rgba(255, 0, 0, 0.114);
+               grid-column: 2 / span 8;
+               grid-row: 2 / span 8;
+            }
+            b {
+               display: block;
+               &.black{
+                  background-color: black;
+               }  
+               &.white{
+                  background-color: beige;
+               }
+            }
+            .FA {
+               grid-column: 2;
+            }
+            .FB {
+               grid-column: 3;
+            }
+            .FC {
+               grid-column: 4;
+            }
+            .FD {
+               grid-column: 5;
+            }
+            .FE {
+               grid-column: 6;
+            }
+            .FF {
+               grid-column: 7;
+            }
+            .FG {
+               grid-column: 8;
+            }
+            .C1{
+               grid-row: 9;
+            }
+            .C2{
+               grid-row: 8;
+            }
+            .C3{
+               grid-row: 7;
+            }
+            .C4{
+               grid-row: 6;
+            }
+            .C5{
+               grid-row: 5;
+            }
+            .C6{
+               grid-row: 4;
+            }
+            .C7{
+               grid-row: 3;
+            }
+            .C8{
+               grid-row: 2;
+            }
+            div{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+            }
+         }
+      }
+   }
+}

@@ -84,10 +84,22 @@ html body #main_container main article div {
   flex-wrap: wrap;
 }
 html body #main_container main article div section {
+  transition: all 1s;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background-color: blue;
   padding: 10px;
   width: calc(33% - 10px);
   box-sizing: border-box;
   border: 1px solid black;
+}
+html body #main_container main article div section:hover {
+  transition: all 1s;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  background-color: red;
 }
 html body #main_container main article div section img {
   float: left;
