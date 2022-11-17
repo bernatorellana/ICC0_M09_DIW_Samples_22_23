@@ -1,0 +1,134 @@
+#net_iesmila_diw {
+   height: 100%;
+
+   body {
+      height: 100%;
+
+      display: flex;
+      flex-direction: column;
+      header, footer {
+         display:flex;
+         background-color: lime;
+         height:80px;
+         align-items: center;
+         padding: 20px;
+         #menuHandler{
+            display: none;
+         }
+      }
+      nav{
+         background-color: white;
+          ul {
+            width: 100%;
+            display: flex;
+            li{
+               flex: 1;
+               text-align: center;
+               border: 1px solid black;
+               padding: 20px;
+            }
+          }
+      }
+      main{
+         flex: 1;
+         background-color: orange;
+         max-width: 1100px;
+         margin: 0px auto;
+         display: flex;
+         padding-left: 10px;
+         padding-right: 10px;
+
+         img {
+            width: 100%;
+         }
+
+         section{
+            padding: 20px;
+            flex:1;
+         }
+         #contents{
+               order:1;
+               background-color: aqua;
+         }
+         #leftc{
+            order:3;
+         }
+         #rightc{
+            order:2;
+            background-color: burlywood;
+         }
+
+
+      }
+      footer{
+         background-color: lime;
+         height:80px;
+      }
+   }
+   
+}
+
+@media only screen and (max-width:900px) {
+
+   #net_iesmila_diw {
+      body{
+         header{
+         background-color: red;
+         }
+
+         main{
+            flex-wrap: wrap;
+            #contents{
+               order:3;
+               width: 100%;
+               flex: auto;
+            }
+            #leftc{
+               order:2;
+            }
+            #rightc{
+               order:1;
+            }
+         }
+      }
+   }  
+} // End of 900 media-query
+@media only screen and (max-width:600px) {
+   #net_iesmila_diw {
+      body{
+         header{
+            h1 {display: none;}
+            #menuHandler{
+               display: block;
+            }
+            background-color: blueviolet;
+         }
+         nav{
+            height: 100%;
+            transition: all 1s;
+            &.hidden_menu{
+               height: 0%;
+            }
+            ul {
+               flex-direction: column;
+              
+            }
+         }
+         main{
+            flex-direction: column;
+
+            #contents{
+               order:1;
+            }
+            #leftc{
+               order:2;
+            }
+            #rightc{
+               order:3;
+            }
+         }
+
+      }
+   }
+   
+}

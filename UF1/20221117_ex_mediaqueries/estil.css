@@ -1,0 +1,116 @@
+#net_iesmila_diw {
+  height: 100%;
+}
+#net_iesmila_diw body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#net_iesmila_diw body header,
+#net_iesmila_diw body footer {
+  display: flex;
+  background-color: lime;
+  height: 80px;
+  align-items: center;
+  padding: 20px;
+}
+#net_iesmila_diw body header #menuHandler,
+#net_iesmila_diw body footer #menuHandler {
+  display: none;
+}
+#net_iesmila_diw body nav {
+  background-color: white;
+}
+#net_iesmila_diw body nav ul {
+  width: 100%;
+  display: flex;
+}
+#net_iesmila_diw body nav ul li {
+  flex: 1;
+  text-align: center;
+  border: 1px solid black;
+  padding: 20px;
+}
+#net_iesmila_diw body main {
+  flex: 1;
+  background-color: orange;
+  max-width: 1100px;
+  margin: 0px auto;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#net_iesmila_diw body main img {
+  width: 100%;
+}
+#net_iesmila_diw body main section {
+  padding: 20px;
+  flex: 1;
+}
+#net_iesmila_diw body main #contents {
+  order: 1;
+  background-color: aqua;
+}
+#net_iesmila_diw body main #leftc {
+  order: 3;
+}
+#net_iesmila_diw body main #rightc {
+  order: 2;
+  background-color: burlywood;
+}
+#net_iesmila_diw body footer {
+  background-color: lime;
+  height: 80px;
+}
+@media only screen and (max-width: 900px) {
+  #net_iesmila_diw body header {
+    background-color: red;
+  }
+  #net_iesmila_diw body main {
+    flex-wrap: wrap;
+  }
+  #net_iesmila_diw body main #contents {
+    order: 3;
+    width: 100%;
+    flex: auto;
+  }
+  #net_iesmila_diw body main #leftc {
+    order: 2;
+  }
+  #net_iesmila_diw body main #rightc {
+    order: 1;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #net_iesmila_diw body header {
+    background-color: blueviolet;
+  }
+  #net_iesmila_diw body header h1 {
+    display: none;
+  }
+  #net_iesmila_diw body header #menuHandler {
+    display: block;
+  }
+  #net_iesmila_diw body nav {
+    height: 100%;
+    transition: all 1s;
+  }
+  #net_iesmila_diw body nav.hidden_menu {
+    height: 0%;
+  }
+  #net_iesmila_diw body nav ul {
+    flex-direction: column;
+  }
+  #net_iesmila_diw body main {
+    flex-direction: column;
+  }
+  #net_iesmila_diw body main #contents {
+    order: 1;
+  }
+  #net_iesmila_diw body main #leftc {
+    order: 2;
+  }
+  #net_iesmila_diw body main #rightc {
+    order: 3;
+  }
+}

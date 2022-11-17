@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>KK</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="reset.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="estil.css" />
+	<link rel="stylesheet" type="text/css" media="print" href="impressio.css" />
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+		integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', onLoaded);
+		function onLoaded() {
+			setTimeout(tickTack, 3000);
+		}
+		function tickTack() {
+			setTimeout(tickTack, 3000);
+			let seleccionat = $("input[type='radio'][name='primer']:checked").val();
+			seleccionat = (Number(seleccionat) + 1);
+			if (seleccionat > 4) seleccionat = 1;
+			$("input[type='radio'][value='" + seleccionat + "']").prop("checked", true);
+
+		}
+	</script>
+</head>
+
+<body>
+
+
+	<input type="radio" id="rdo1" name="primer" value="1">
+	<input type="radio" id="rdo2" name="primer" value="2">
+	<input type="radio" id="rdo3" name="primer" value="3">
+	<input type="radio" id="rdo4" name="primer" value="4">
+	<main>
+		<section class="carrousel">
+			<header>
+				<nav><i class="fa fa-solid fa-arrow-left"></i></nav>
+				<nav><i class="fa fa-solid fa-arrow-right"></i></nav>
+			</header>
+			<main>
+				<article><img src="https://picsum.photos/1600/600?1"></article>
+				<article><img src="https://picsum.photos/1600/600?2"></article>
+				<article><img src="https://picsum.photos/1600/600?3"></article>
+				<article><img src="https://picsum.photos/1600/600?4"></article>
+			</main>
+
+			<footer>
+				<ul>
+					<li><label for="rdo1"></label></li>
+					<li><label for="rdo2"></label></li>
+					<li><label for="rdo3"></label></li>
+					<li><label for="rdo4"></label></li>
+
+				</ul>
+			</footer>
+		</section>
+
+
+	</main>
+
+
+</body>
+
+</html>

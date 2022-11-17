@@ -45,7 +45,7 @@ function lletres(){
 				<figure class="FA C4">♘</figure>
 				<figure class="FD C8">♘</figure>
 
-				<figure style="--fila:5;--columna:6" class="cavall"></figure>
+				<figure style="--fila:5;--columna:6" >♘</figure>
 			</section>
 		</main>	
 
