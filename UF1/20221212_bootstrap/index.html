@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en" id="iesmilanet">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Bootstrap demo</title>
+   <link href="./bootstrap-5.2.3-dist/css/bootstrap.min.css" rel="stylesheet">
+   <link href="./css/estil.css" rel="stylesheet">
+</head>
+
+<body>
+
+   <header class="container-fluid">
+      <h1>Hello, world!</h1>
+   </header>
+   <main class="container">
+
+      <input type="button" value="OK" class="btn btn-primary">
+
+      <div class="btn-group" role="group" aria-label="Basic example">
+         <button type="button" class="btn btn-primary">Left</button>
+         <button type="button" class="btn btn-primary">Middle</button>
+         <button type="button" class="btn btn-primary">Right</button>
+      </div>
+      <div class="row">
+
+         <div class=" col-sm-6 col-md-4 card">
+            <img src="https://picsum.photos/200/200" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title">Card title</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+               <a href="#" class="btn btn-secondary">Go somewhere</a>
+            </div>
+         </div>
+         <div class=" col-sm-6 col-md-4 card">
+            <img src="https://picsum.photos/200/200" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title">Card title</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+               <a href="#" class="btn btn-secondary">Go somewhere</a>
+            </div>
+         </div>
+         <div class=" col-sm-6 col-md-4 card">
+            <img src="https://picsum.photos/200/200" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title">Card title</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+               <a href="#" class="btn btn-secondary">Go somewhere</a>
+            </div>
+         </div>
+      </div>
+
+      <div class="progress">
+         <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10"
+            aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+
+
+      <div class="container">
+         <div class="row row-cols-3">
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+         </div>
+      </div>
+
+      <p>
+         <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
+            aria-expanded="false" aria-controls="collapseExample">
+            Link with href
+         </a>
+         <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+            aria-expanded="false" aria-controls="collapseExample">
+            Button with data-bs-target
+         </button>
+      </p>
+      <div class="collapse" id="collapseExample">
+         <div class="card card-body">
+            Some placeholder content for the collapse component. This panel is hidden by default but revealed when the
+            user activates the relevant trigger.
+         </div>
+      </div>
+
+      <script src="./bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+   </main>
+</body>
+
+</html>

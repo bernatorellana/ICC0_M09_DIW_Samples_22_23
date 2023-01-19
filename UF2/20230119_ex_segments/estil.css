@@ -1,0 +1,350 @@
+@keyframes bambu {
+  0% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+html {
+  height: 100%;
+}
+html body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+html body div {
+  overflow: visible;
+  position: relative;
+  background-color: rgba(246, 220, 104, 0.573);
+  box-sizing: border-box;
+  outline: 1px solid black;
+  height: 50px;
+  width: 10px;
+}
+html body .base {
+  position: absolute;
+  bottom: 0px;
+}
+html body .base:nth-child(3n) .segment {
+  animation-delay: 0.1s;
+}
+html body .base:nth-child(3n+1) .segment {
+  animation-delay: 0.2s;
+}
+html body .base:nth-child(1) {
+  left: 30px;
+}
+html body .base:nth-child(2) {
+  left: 60px;
+}
+html body .base:nth-child(3) {
+  left: 90px;
+}
+html body .base:nth-child(4) {
+  left: 120px;
+}
+html body .base:nth-child(5) {
+  left: 150px;
+}
+html body .base:nth-child(6) {
+  left: 180px;
+}
+html body .base:nth-child(7) {
+  left: 210px;
+}
+html body .base:nth-child(8) {
+  left: 240px;
+}
+html body .base:nth-child(9) {
+  left: 270px;
+}
+html body .base:nth-child(10) {
+  left: 300px;
+}
+html body .base:nth-child(11) {
+  left: 330px;
+}
+html body .base:nth-child(12) {
+  left: 360px;
+}
+html body .base:nth-child(13) {
+  left: 390px;
+}
+html body .base:nth-child(14) {
+  left: 420px;
+}
+html body .base:nth-child(15) {
+  left: 450px;
+}
+html body .base:nth-child(16) {
+  left: 480px;
+}
+html body .base:nth-child(17) {
+  left: 510px;
+}
+html body .base:nth-child(18) {
+  left: 540px;
+}
+html body .base:nth-child(19) {
+  left: 570px;
+}
+html body .base:nth-child(20) {
+  left: 600px;
+}
+html body .base:nth-child(21) {
+  left: 630px;
+}
+html body .base:nth-child(22) {
+  left: 660px;
+}
+html body .base:nth-child(23) {
+  left: 690px;
+}
+html body .base:nth-child(24) {
+  left: 720px;
+}
+html body .base:nth-child(25) {
+  left: 750px;
+}
+html body .base:nth-child(26) {
+  left: 780px;
+}
+html body .base:nth-child(27) {
+  left: 810px;
+}
+html body .base:nth-child(28) {
+  left: 840px;
+}
+html body .base:nth-child(29) {
+  left: 870px;
+}
+html body .base:nth-child(30) {
+  left: 900px;
+}
+html body .base:nth-child(31) {
+  left: 930px;
+}
+html body .base:nth-child(32) {
+  left: 960px;
+}
+html body .base:nth-child(33) {
+  left: 990px;
+}
+html body .base:nth-child(34) {
+  left: 1020px;
+}
+html body .base:nth-child(35) {
+  left: 1050px;
+}
+html body .base:nth-child(36) {
+  left: 1080px;
+}
+html body .base:nth-child(37) {
+  left: 1110px;
+}
+html body .base:nth-child(38) {
+  left: 1140px;
+}
+html body .base:nth-child(39) {
+  left: 1170px;
+}
+html body .base:nth-child(40) {
+  left: 1200px;
+}
+html body .base:nth-child(41) {
+  left: 1230px;
+}
+html body .base:nth-child(42) {
+  left: 1260px;
+}
+html body .base:nth-child(43) {
+  left: 1290px;
+}
+html body .base:nth-child(44) {
+  left: 1320px;
+}
+html body .base:nth-child(45) {
+  left: 1350px;
+}
+html body .base:nth-child(46) {
+  left: 1380px;
+}
+html body .base:nth-child(47) {
+  left: 1410px;
+}
+html body .base:nth-child(48) {
+  left: 1440px;
+}
+html body .base:nth-child(49) {
+  left: 1470px;
+}
+html body .base:nth-child(50) {
+  left: 1500px;
+}
+html body .base:nth-child(51) {
+  left: 1530px;
+}
+html body .base:nth-child(52) {
+  left: 1560px;
+}
+html body .base:nth-child(53) {
+  left: 1590px;
+}
+html body .base:nth-child(54) {
+  left: 1620px;
+}
+html body .base:nth-child(55) {
+  left: 1650px;
+}
+html body .base:nth-child(56) {
+  left: 1680px;
+}
+html body .base:nth-child(57) {
+  left: 1710px;
+}
+html body .base:nth-child(58) {
+  left: 1740px;
+}
+html body .base:nth-child(59) {
+  left: 1770px;
+}
+html body .base:nth-child(60) {
+  left: 1800px;
+}
+html body .base:nth-child(61) {
+  left: 1830px;
+}
+html body .base:nth-child(62) {
+  left: 1860px;
+}
+html body .base:nth-child(63) {
+  left: 1890px;
+}
+html body .base:nth-child(64) {
+  left: 1920px;
+}
+html body .base:nth-child(65) {
+  left: 1950px;
+}
+html body .base:nth-child(66) {
+  left: 1980px;
+}
+html body .base:nth-child(67) {
+  left: 2010px;
+}
+html body .base:nth-child(68) {
+  left: 2040px;
+}
+html body .base:nth-child(69) {
+  left: 2070px;
+}
+html body .base:nth-child(70) {
+  left: 2100px;
+}
+html body .base:nth-child(71) {
+  left: 2130px;
+}
+html body .base:nth-child(72) {
+  left: 2160px;
+}
+html body .base:nth-child(73) {
+  left: 2190px;
+}
+html body .base:nth-child(74) {
+  left: 2220px;
+}
+html body .base:nth-child(75) {
+  left: 2250px;
+}
+html body .base:nth-child(76) {
+  left: 2280px;
+}
+html body .base:nth-child(77) {
+  left: 2310px;
+}
+html body .base:nth-child(78) {
+  left: 2340px;
+}
+html body .base:nth-child(79) {
+  left: 2370px;
+}
+html body .base:nth-child(80) {
+  left: 2400px;
+}
+html body .base:nth-child(81) {
+  left: 2430px;
+}
+html body .base:nth-child(82) {
+  left: 2460px;
+}
+html body .base:nth-child(83) {
+  left: 2490px;
+}
+html body .base:nth-child(84) {
+  left: 2520px;
+}
+html body .base:nth-child(85) {
+  left: 2550px;
+}
+html body .base:nth-child(86) {
+  left: 2580px;
+}
+html body .base:nth-child(87) {
+  left: 2610px;
+}
+html body .base:nth-child(88) {
+  left: 2640px;
+}
+html body .base:nth-child(89) {
+  left: 2670px;
+}
+html body .base:nth-child(90) {
+  left: 2700px;
+}
+html body .base:nth-child(91) {
+  left: 2730px;
+}
+html body .base:nth-child(92) {
+  left: 2760px;
+}
+html body .base:nth-child(93) {
+  left: 2790px;
+}
+html body .base:nth-child(94) {
+  left: 2820px;
+}
+html body .base:nth-child(95) {
+  left: 2850px;
+}
+html body .base:nth-child(96) {
+  left: 2880px;
+}
+html body .base:nth-child(97) {
+  left: 2910px;
+}
+html body .base:nth-child(98) {
+  left: 2940px;
+}
+html body .base:nth-child(99) {
+  left: 2970px;
+}
+html body .base:nth-child(100) {
+  left: 3000px;
+}
+html body .segment {
+  position: absolute;
+  background-color: rgba(246, 220, 104, 0.573);
+  transform-origin: 50% 100%;
+  bottom: 100%;
+  animation-name: bambu;
+  animation-duration: 5s;
+  overflow: visible;
+  animation-iteration-count: infinite;
+}

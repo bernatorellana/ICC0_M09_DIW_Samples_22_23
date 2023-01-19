@@ -1,0 +1,33 @@
+html {
+  height: 100%;
+}
+html body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html body main {
+  position: relative;
+}
+html body main:hover #lluna {
+  transform: rotate(360deg) translateX(390px);
+}
+html body main div {
+  border-radius: 50%;
+  background-color: brown;
+}
+html body main #planeta {
+  width: 600px;
+  height: 600px;
+}
+html body main #lluna {
+  position: absolute;
+  left: 250px;
+  top: 250px;
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  transition: transform 2s;
+  transform: rotate(0deg) translateX(390px);
+}

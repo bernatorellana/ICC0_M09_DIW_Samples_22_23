@@ -1,0 +1,64 @@
+
+@angle:5deg;
+@keyframes bambu {
+   0% {transform:rotate(@angle);}
+   50% {transform:rotate(-@angle);}
+   100% {transform:rotate(@angle);}
+}
+
+
+
+@L:50px;
+@l: 10px;
+html {
+   height: 100%;
+   body {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: visible;
+      div {
+         overflow: visible;
+         position: relative;
+         background-color:  rgba(246, 220, 104, 0.573);
+         box-sizing: border-box;
+         outline:1px solid black;
+         height: @L;
+         width: @l;
+         
+      }      
+      .base {
+         position: absolute;
+         bottom: 0px;
+
+         &:nth-child(3n) .segment{
+            animation-delay: 0.1s;
+         }
+         &:nth-child(3n+1) .segment{
+            animation-delay: 0.2s;
+         }
+
+         each(range(1, 100, 1), {
+
+            &:nth-child(@{index}){
+               left:@index * 30px;
+            }
+         
+         
+          });
+      }
+      .segment{
+         position: absolute;
+         background-color: rgba(246, 220, 104, 0.573);
+         //transform:rotate(5deg);
+         transform-origin: 50% 100%;
+         bottom: 100%;
+         animation-name: bambu;
+         animation-duration:  5s;
+         overflow: visible;
+         animation-iteration-count: infinite;
+
+      }
+   }
+}

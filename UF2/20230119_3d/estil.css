@@ -1,0 +1,60 @@
+html {
+  height: 100%;
+}
+html body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 600px;
+}
+html body main {
+  width: 200px;
+  height: 200px;
+  transition: all 5s;
+  transform: rotateY(0deg) rotateZ(22deg) rotateX(45deg);
+  transform-style: preserve-3d;
+}
+html body main:hover {
+  transform: rotateY(1800deg) rotateZ(22deg) rotateX(45deg);
+}
+html body main div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 200px;
+  height: 200px;
+  background-color: lime;
+  transform: rotateY(0deg);
+}
+html body main div.right {
+  transform-origin: 0% 50%;
+  transform: rotateY(-90deg);
+  background-color: yellow;
+}
+html body main div.left {
+  transform-origin: 100% 50%;
+  transform: rotateY(90deg);
+  background-color: red;
+}
+html body main div.top {
+  transform-origin: 50% 0%;
+  transform: rotateX(90deg);
+  background-color: magenta;
+}
+html body main div.bottom {
+  transform-origin: 50% 100%;
+  transform: rotateX(-90deg);
+  background-color: blue;
+}
+html body main div.front {
+  transform: translateZ(200px);
+  background-color: orange;
+}
+html body main div.back {
+  transform: rotateY(180deg);
+  background-color: chocolate;
+}

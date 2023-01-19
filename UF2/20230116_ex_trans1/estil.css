@@ -1,0 +1,35 @@
+html {
+  height: 100%;
+}
+html div {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+html div:nth-child(1) {
+  background-color: aqua;
+  transform-origin: 0% 0%;
+  transform: translate(300px, 200px) scaleY(0.2);
+}
+html div:nth-child(2) {
+  transform-origin: 0% 100%;
+  transform: translate(250px, 0px) rotate(90deg) scaleY(0.2);
+  background-color: #0044ff;
+  z-index: 100;
+}
+html div:nth-child(3) {
+  background-color: #07146a;
+  transform-origin: 0% 100%;
+  transform: translate(550px, 0px) rotate(90deg) scaleY(0.2);
+}
+html div:nth-child(4) {
+  background-color: #23f4c7;
+  transform-origin: 0% 0%;
+  transform: translate(300px, 500px) scaleY(0.2);
+}
+html div:nth-child(5) {
+  background-color: lime;
+  transform: translate(300px, 250px) rotate(45deg) scale(0.7);
+}

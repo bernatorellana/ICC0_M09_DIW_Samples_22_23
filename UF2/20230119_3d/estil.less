@@ -1,0 +1,64 @@
+@c: 200px;
+html {
+         height:100%;
+         body{
+            height:100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            perspective: 600px;
+         main{
+            width: @c;
+            height: @c;
+            &:hover {
+               transform: rotateY(5 * 360deg) rotateZ(22deg) rotateX(45deg);            
+            
+            }
+            transition:all 5s;
+            transform:rotateY(0deg) rotateZ(22deg) rotateX(45deg);
+            transform-style: preserve-3d;
+            div{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               position:absolute;
+               top:0px;
+               left: 0px;
+               width: @c;
+               height: @c;
+               background-color: lime;
+               transform: rotateY(00deg);
+
+               &.right {
+                  transform-origin: 0% 50%;
+                  transform: rotateY(-90deg);
+                  background-color: yellow;
+               }
+               &.left {
+                  transform-origin: 100% 50%;
+                  transform: rotateY(90deg);
+                  background-color: red;
+               }
+               &.top {
+                  transform-origin: 50% 0%;
+                  transform: rotateX(90deg);
+                  background-color: magenta;
+               }
+               &.bottom {
+                  transform-origin: 50% 100%;
+                  transform: rotateX(-90deg);
+                  background-color: blue;
+               }
+               &.front{
+                  transform: translateZ(@c);
+                  background-color: orange;
+               }
+               &.back{
+                  transform: rotateY(180deg);
+                  background-color: chocolate;
+               }
+
+            }
+         }
+      }
+}
