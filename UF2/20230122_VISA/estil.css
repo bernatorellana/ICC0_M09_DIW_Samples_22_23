@@ -1,0 +1,27 @@
+html {
+  height: 100%;
+}
+html body {
+  height: 100%;
+  perspective: 600px;
+}
+html body main {
+  position: relative;
+  transform-style: preserve-3d;
+  width: 540px;
+  height: 300px;
+  transition: transform 2s;
+}
+html body main:hover {
+  transform: rotateY(180deg);
+}
+html body main div {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+html body main div.back {
+  transform: rotateY(180deg);
+}
