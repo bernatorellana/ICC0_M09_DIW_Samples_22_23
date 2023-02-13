@@ -1,0 +1,53 @@
+
+html {
+         height:100%;
+
+         .capsa {
+               position: relative;
+               width: fit-content;
+               div, h1 {
+                  padding:20px;
+                  position: absolute;
+                  top:5%;left:5%;
+                  width: 90%;
+                  height: 30%;
+                  box-sizing: border-box;
+
+               }
+               h1 {
+                  font-size:30px;
+                  color:white;
+                  //font-weight: bold;
+                  text-align: center;
+                  text-transform: uppercase;
+                  font-family: Calibri, Arial;
+                  span {
+                     font-weight: 900;
+                  }
+               }
+               div {
+                  border: 2px solid white;
+                  transition:all 1s;
+                  p{
+                     transform-origin: 50% 100%;
+                     transform:scaleY(0);
+                     transition:all 0.5s;
+                     transition-delay: 0.0s;
+                     color:white;
+                     opacity: 0;
+                  }
+               }
+
+               &:hover {
+                  div{
+                     top:65%;
+                     p{
+                        transition:all 0.5s;
+                        transition-delay: 0.5s;                        
+                        transform:scaleY(1);
+                        opacity: 1;
+                     }
+                  }
+               }
+         }//fi capsa
+}

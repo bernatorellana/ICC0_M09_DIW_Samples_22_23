@@ -1,0 +1,48 @@
+html {
+  height: 100%;
+}
+html .capsa {
+  position: relative;
+  width: fit-content;
+}
+html .capsa div,
+html .capsa h1 {
+  padding: 20px;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 30%;
+  box-sizing: border-box;
+}
+html .capsa h1 {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Calibri, Arial;
+}
+html .capsa h1 span {
+  font-weight: 900;
+}
+html .capsa div {
+  border: 2px solid white;
+  transition: all 1s;
+}
+html .capsa div p {
+  transform-origin: 50% 100%;
+  transform: scaleY(0);
+  transition: all 0.5s;
+  transition-delay: 0s;
+  color: white;
+  opacity: 0;
+}
+html .capsa:hover div {
+  top: 65%;
+}
+html .capsa:hover div p {
+  transition: all 0.5s;
+  transition-delay: 0.5s;
+  transform: scaleY(1);
+  opacity: 1;
+}

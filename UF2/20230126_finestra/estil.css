@@ -1,0 +1,70 @@
+html {
+  height: 100%;
+  background-image: url(images/ordesa.jpg);
+  background-attachment: fixed;
+}
+html body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+html body header,
+html body footer {
+  flex: 1fr;
+  width: 100%;
+  background-color: white;
+  height: 33%;
+}
+html body section {
+  display: flex;
+  flex-direction: row;
+}
+html body section aside {
+  flex: 1;
+  background-color: white;
+}
+html body section .frame {
+  perspective: 900px;
+  margin: 0px auto;
+  width: fit-content;
+  position: relative;
+}
+html body section .frame:hover .left {
+  transform: rotateY(-120deg);
+}
+html body section .frame:hover .right {
+  transform: rotateY(120deg);
+}
+html body section .frame:hover .front {
+  transform: rotateY(-120deg) translateZ(10px);
+}
+html body section .frame:hover .canto {
+  transform: rotateY(-120deg) translate(155px) rotateY(-90deg);
+}
+html body section .frame .canto {
+  position: absolute;
+  left: 8px;
+  height: 358px;
+  width: 10px;
+  transform: rotateY(0deg) translate(155px) rotateY(-90deg);
+  background-color: #b5885e;
+  transform-origin: 0% 0%;
+}
+html body section .frame div {
+  transition: all 2s;
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  transform-style: preserve-3d;
+}
+html body section .frame .left {
+  transform-origin: 0% 0%;
+}
+html body section .frame .front {
+  transform: rotateY(0deg) translateZ(10px);
+}
+html body section .frame .right {
+  transform-origin: 100% 0%;
+  left: auto;
+  right: 5px;
+}

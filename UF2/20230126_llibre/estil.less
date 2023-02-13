@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Style+Script&display=swap');
+
+@alsada: 400px;
+html {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height:100%;
+   background-color: brown;
+   .llibre {
+      perspective: 500px;
+      transform-style: preserve-3d;
+      &:hover {
+         h1 {
+            transform:translateZ(-50px) rotateY(-180deg) ;
+            transition-delay: 0 * @delay;
+         }
+         div {
+                
+            &:nth-child(5) {
+               transform:translateZ(-45px) rotateY(-180deg) ;
+               transition-delay: 1 * @delay;
+
+            }
+            &:nth-child(4) {
+               transform:translateZ(-40px) rotateY(-180deg) ;
+               transition-delay: 2 * @delay;
+
+            }
+            &:nth-child(3) {
+               transform:translateZ(-35px) rotateY(-180deg) ;
+               transition-delay: 3 * @delay;
+
+            }
+            &:nth-child(2) {
+               transform:translateZ(-30px) rotateY(-180deg) ;
+               transition-delay: 4 * @delay;
+
+            }         
+            &:nth-child(1) {
+               transform:translateZ(-25px) rotateY(-180deg) ;
+               transition-delay: 5 * @delay;
+
+            }   
+         }
+         
+      }
+      @delay: 1s;
+      width: 250px;
+      height: @alsada;
+      position: relative;
+      div,h1 {
+         position:absolute;   
+         transform-origin:0% 0%;
+         transition: transform 1s;  
+         transform-style: preserve-3d;    
+         transform:translateZ(0px) rotateY(0deg) ;
+         //transform:  translateZ(10px);
+         height: @alsada;
+         //box-sizing: border-box;
+       
+      }
+      h1{
+         transition-delay: 6 * @delay;
+      }
+      div:nth-child(5) {
+         transition-delay: 5 * @delay;
+      }
+      div:nth-child(4) {
+         transition-delay: 4 * @delay;
+      }
+      
+      div:nth-child(3) {
+         transition-delay: 3 * @delay;
+      }
+      div:nth-child(2) {
+         transition-delay:2 * @delay;
+      }
+      div:nth-child(1) {
+         transition-delay:1 * @delay;
+      }
+         p,h1 {
+            overflow: hidden;
+            position: absolute;
+            top:0px;left:0px;
+            width: 250px;
+            height: @alsada;
+            background-size: cover;
+            padding: 20px;
+
+            box-sizing: border-box;
+            transform-style: preserve-3d;    
+         }
+         h1{
+            background-image: url(images/cover.png) ;
+            background-size :100% 100%;
+            color:white;
+            text-align: center;
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+         p {
+            background-image: url(images/paper-texture.jpg) ;
+            background-size: 100% 100%;
+            font-family: 'Style Script', cursive;
+            backface-visibility: hidden;
+            font-size:20px;
+            display: block;
+            &:nth-child(2){
+               transform: rotateY(180deg);
+            }
+         }
+      }
+
+}
+
+

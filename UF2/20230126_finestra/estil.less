@@ -1,0 +1,79 @@
+
+html {
+         height:100%;
+         background-image: url(images/ordesa.jpg);
+         background-attachment: fixed;
+         body {
+            display: flex;
+            flex-direction: column;
+            height:100%;
+            header, footer {
+               flex:1fr;
+               width: 100%;
+               background-color: white;
+               height: 33%;
+            }
+            section {
+               display: flex;
+               flex-direction: row;
+               aside {
+                  flex:1;
+                  background-color: white;
+               }
+               .frame{
+                  perspective: 900px;
+                  
+                  &:hover {
+                       .left {
+                           
+                           transform:rotateY(-120deg);
+                       } 
+                       .right {
+                           
+                         transform:rotateY(+120deg);
+                    } 
+                    .front {
+                        transform:rotateY(-120deg) translateZ(10px) ;
+                    }
+                    .canto{
+                     transform: rotateY(-120deg) translate(155px) rotateY(-90deg);
+                    }
+
+                  }
+                  .canto {
+                     position:absolute;
+                     left:8px;
+                     height: 358px;
+                     width:10px;
+                     transform: rotateY(0deg) translate(155px) rotateY(-90deg);
+                     background-color: #b5885e;
+                     transform-origin: 0% 0%;
+                  }
+
+                  margin:0px auto;
+                  width:fit-content;
+                  position: relative;
+                  div {
+                     transition:all 2s;
+                     //backface-visibility: hidden;
+                     position:absolute;
+                     top:5px;left:8px;
+                     transform-style: preserve-3d;
+                  }
+                  .left {
+                     transform-origin:0% 0%;
+                  }
+                  .front {
+                     transform: rotateY(0deg)  translateZ(10px);
+
+                  }
+                  .right {
+                     transform-origin:100% 0%;
+                     left:auto;
+                     right:5px;
+                  }
+               }
+            }
+
+         }
+}

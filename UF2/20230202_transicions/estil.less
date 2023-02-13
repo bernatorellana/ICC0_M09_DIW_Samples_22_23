@@ -1,0 +1,65 @@
+
+html {
+         height:100%;
+
+         main{
+            
+            padding: 30px;
+            font-size: 20px;
+            &:hover p {
+               opacity: 0%;
+               transform:scaleY(0);
+            }
+            p {
+               transition: 
+                  opacity 2s linear 1s,  
+                  transform 4s linear 0s;
+                  transition-timing-function: cubic-bezier(0,.96,1,.06);
+            }
+
+
+            .bola {
+               background-color: aquamarine;
+               position:absolute;
+               top:500px;
+               left:0%;
+               border-radius: 50%;
+               width: 100px;
+               height: 100px;
+               transition:left 2s steps(4), 
+                        top 2s steps(4);
+            }
+            
+         }
+         &:hover .bola {
+            background-color: lime;
+            left:90%;
+            top:0px;
+         }
+
+         @FRAMES:9;
+         @fps: 10s;
+         @ampladaSprite:37px;
+
+
+         .sprite {
+            position:absolute;
+            bottom:0px;
+            left:300px;
+            transform: scale(2);
+            transform-origin: 50% 100%;
+            width: 40px;
+            overflow: hidden;
+            img{
+               transition:all (@FRAMES / @fps) steps(@FRAMES - 1);
+               position:relative;            
+               left: 0px;     
+            }
+         }
+
+         &:hover img {
+            left: -(@FRAMES - 1 ) * @ampladaSprite;                 
+         }
+
+
+}
