@@ -1,0 +1,86 @@
+@distancia: 200px;
+@duracio: 1s;
+@num_boles: 20;
+
+@keyframes animacio_bola {
+   0% {
+      transform: scaleY(0);
+   }
+
+   50% {
+      transform: scaleY(1);
+   }
+
+   100% {
+      transform: scaleY(0);
+   }
+}
+
+html {
+   height: 100%;
+
+   body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+
+      section {
+         position: relative;
+         //top: (-@distancia / 2);
+         display: flex;
+
+         b {
+
+            each(range(1, @num_boles, 1), {
+                  &:nth-child(@{index}) {
+                     animation-delay: ((@index - 1) * @duracio / @num_boles);
+                  }
+               }
+
+            );
+
+
+            transform-origin: 50% 100%;
+
+            margin: 10px;
+            position: relative;
+            display: block;
+            width: 10px;
+            height: 300px;
+            //border-radius: 50%;
+            background-color: rgba(127, 155, 255, 0.666);
+            //background-image: url(esfere.jpg);
+            background-size: contain;
+
+            animation-name: animacio_bola;
+            animation-duration: @duracio;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            /*
+            &:before {
+               content: "";
+               display: block;
+               width: 100%;
+               height: 100%;
+               border-radius: 50%;
+               background: radial-gradient(ellipse at 75%, rgba(211, 150, 18, 0.6) 0%, rgba(0, 150, 40, 0.2) 100%);
+               position: absolute;
+
+            }
+
+            &:after {
+               content: "";
+               display: block;
+               width: 20%;
+               height: 20%;
+               border-radius: 50%;
+               background-color: rgba(255, 255, 255, 0.472);
+               position: absolute;
+               top: 15%;
+               left: 15%;
+            }*/
+         }
+      }
+   }
+}

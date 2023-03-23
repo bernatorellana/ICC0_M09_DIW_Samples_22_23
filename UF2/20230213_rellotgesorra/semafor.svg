@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="29.211466mm"
+   height="75.522324mm"
+   viewBox="0 0 29.211466 75.522324"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="semafor.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.74271634"
+     inkscape:cx="335.23311"
+     inkscape:cy="433.9239"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1836"
+     inkscape:window-height="1057"
+     inkscape:window-x="76"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#a57b36;fill-opacity:1;stroke-width:0.897001;stop-color:#000000"
+       id="rect833"
+       width="29.211466"
+       height="75.522324"
+       x="4.866107e-07"
+       y="8.7903868e-07" />
+    <ellipse
+       style="fill:#46c353;fill-opacity:1;stroke-width:0.897001;stop-color:#000000"
+       id="path835"
+       cx="14.427615"
+       cy="61.272827"
+       rx="9.7965279"
+       ry="8.9059343" />
+    <ellipse
+       style="fill:#effe0b;fill-opacity:1;stroke-width:0.897001;stop-color:#000000"
+       id="path835-6"
+       cx="14.605733"
+       cy="38.47364"
+       rx="9.7965279"
+       ry="8.9059343" />
+    <ellipse
+       style="fill:#fe0b0b;fill-opacity:1;stroke-width:0.897001;stop-color:#000000"
+       id="path835-6-1"
+       cx="14.605731"
+       cy="13.537019"
+       rx="9.7965279"
+       ry="8.9059343" />
+  </g>
+</svg>

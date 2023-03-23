@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>title</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="reset.css" />
+	<link rel="stylesheet" type="text/css" href="estil.css" />
+</head>
+
+<body>
+	<main>
+
+
+		<video class="playing" muted controls loop width="640" height="360" id="video">
+			<source src="frag_h265.mp4" type="video/mp4;codecs=hev1.1.6.L93.B0" />
+			<source src="frag.webm" type="video/webm" />
+			<source src="frag_h264.mp4" type="video/mp4" />
+			<track src="subtitols_ca.vtt" label="Subtítols català" kind="subtitles" srclang="ca">
+			<track src="subtitols_en.vtt" label="English subtitles" kind="subtitles" srclang="en">
+			<p> Actualitza el navegador per veure el vídeo</p>
+		</video>
+		<div id="pauseBtn" class="pause">
+			<p id="innerBtn">⏸</p>
+		</div>
+	</main>
+	<script>
+		let element = document.getElementById("pauseBtn");
+		let vid = document.getElementById("video");
+		element.onclick = function () {
+			if (vid.classList.contains("playing")) {
+				vid.pause();
+				vid.classList.remove("playing");
+				innerBtn.innerHTML = "⏵︎";
+
+			} else {
+				vid.play();
+				innerBtn.innerHTML = "⏸︎	";
+				vid.classList.add("playing");
+			}
+		}
+	</script>
+</body>
+
+</html>
