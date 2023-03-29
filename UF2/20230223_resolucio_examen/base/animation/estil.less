@@ -1,0 +1,104 @@
+@amplada: 300px;
+@tu: 2s;
+@red1: #fde4e4;
+@red2: #fcb5b5;
+@red3: #fc6e6e;
+@red4: #fd2222;
+
+
+@keyframes anim_bola_inflable {
+    0% {
+        visibility: visible;
+        transform: scale(1);
+        background-color: #ffffff;
+    }
+
+    50% {
+        visibility: visible;
+        transform: scale(2);
+        background-color: @red4;
+    }
+
+    100% {
+        visibility: visible;
+        transform: scale(1);
+        background-color: #ffffff;
+    }
+}
+
+// 1 4 1
+@keyframes anim_bola {
+    0% {
+        transform: translateX(-@amplada);
+    }
+
+    16.66% {
+        transform: translateX(0px);
+    }
+
+    83.333% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(@amplada);
+    }
+}
+
+body {
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+
+    #loading {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-@amplada/2, -50%);
+
+        li,
+        .bola_inflable {
+            top: 0px;
+            position: absolute;
+            display: block;
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border-radius: 50%;
+            transform: translateX(-@amplada);
+        }
+
+        .bola_inflable {
+            transform: translateX(0px);
+            animation-name: anim_bola_inflable;
+            animation-duration: 8*@tu;
+            animation-delay: @tu;
+            animation-timing-function: steps(4);
+            visibility: hidden;
+        }
+
+        li {
+            animation-name: anim_bola;
+            animation-duration: 6*@tu;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+
+        }
+
+        li:nth-child(1) {
+            animation-delay: @tu;
+        }
+
+        li:nth-child(2) {
+            animation-delay: 2 * @tu;
+        }
+
+        li:nth-child(3) {
+            animation-delay: 3 * @tu;
+        }
+
+        li:nth-child(4) {
+            animation-delay: 4 * @tu;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+.menu {
+
+   @h: 40px;
+
+   .innerH {
+      position: relative;
+      height: @h;
+      //overflow: hidden;
+      width: 300px;
+      background-color: lime;
+      transition: width 2s;
+
+      &::after {
+         content: "";
+         position: absolute;
+         right: -(@h / 2);
+         top: 0px;
+         display: block;
+         width: @h;
+         height: @h;
+         border-radius: 50%;
+         background-image: url(tile.jpg);
+      }
+   }
+
+   &:hover {
+      .innerH {
+         width: 0%;
+      }
+   }
+
+   ul {
+      display: flex;
+      background-image: url(tile.jpg);
+      width: auto;
+      position: absolute;
+      width: 100%;
+      //min-width: 150px;
+      overflow: hidden;
+
+
+
+      li {
+         min-width: @h;
+         display: block;
+         background-color: orange;
+         border-radius: 50%;
+         font-size: 20px;
+         width: @h;
+         height: @h;
+         text-align: center;
+         border: 2px solid black;
+         margin-left: 10px;
+         box-sizing: border-box;
+         z-index: 100;
+
+         i {
+            line-height: 40px;
+         }
+      }
+   }
+
+
+
+}

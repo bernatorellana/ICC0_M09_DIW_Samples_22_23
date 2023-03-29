@@ -1,0 +1,96 @@
+.xaxihover {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+}
+.xaxihover img {
+  transition: transform 1s;
+}
+.xaxihover header {
+  transition: transform 1s;
+  transition-delay: 2s;
+}
+.xaxihover p {
+  transition: top 1s;
+  transition-delay: 1s;
+}
+.xaxihover ul {
+  transition: top 1s;
+  transition-delay: 0s;
+}
+.xaxihover:hover img {
+  transform: scale(1.4);
+}
+.xaxihover:hover header {
+  transform: translateX(0%);
+  transition-delay: 0s;
+}
+.xaxihover:hover p {
+  top: 100%;
+  transition-delay: 1s;
+}
+.xaxihover:hover ul {
+  top: 200%;
+  transition-delay: 2s;
+}
+.xaxihover header {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  position: absolute;
+  right: 0%;
+  top: 20%;
+  z-index: 10;
+  transform: translateX(100%);
+}
+.xaxihover header h2 {
+  position: relative;
+  z-index: 1000;
+  background-color: #474781;
+  padding: 20px;
+  color: white;
+  font-size: 40px;
+  height: 35px;
+}
+.xaxihover header h2 b {
+  font-weight: 900;
+}
+.xaxihover header p {
+  z-index: 500;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  height: 35px;
+  background-color: #cbcbe8;
+  color: #474781;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 900;
+}
+.xaxihover header ul {
+  z-index: 200;
+  position: absolute;
+  top: 0%;
+  width: 80%;
+  right: 0%;
+  display: flex;
+  justify-content: space-around;
+}
+.xaxihover header ul li {
+  display: block;
+  color: white;
+  background-color: #474781;
+  padding: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.xaxihover:after {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #4c69b5;
+  opacity: 0.5;
+}

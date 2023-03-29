@@ -1,0 +1,87 @@
+<!DOCTYPE html >
+
+<html>
+
+<head>
+    <title>title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Faster+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="estil.css" />
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#btnMenu").click(function(){
+  
+            if($("#clicked").val()=="false" ) {
+                
+                $("#clicked").attr('value', 'true');
+                var disabledElem = $(this);
+                setTimeout(function() {
+                    $("#clicked").attr('value', 'false');
+                }, 600);
+                    
+
+                var elementV = document.getElementById("barV");
+                var elementH = document.getElementById("barH");
+
+
+                if($(".barH").hasClass("anim_forward")) {
+                    $(".barH,.barV").removeClass("anim_forward");
+                    // MAGIA NEGRA PER RELLANÇAR L'ANIMACIÓ
+                    void elementV.offsetWidth;
+                    void elementH.offsetWidth;
+                    $(".barH,.barV").addClass("anim_backwards");
+
+                } else if($(".barH").hasClass("anim_backwards")) {
+                    $(".barH,.barV").removeClass("anim_backwards");
+                    // MAGIA NEGRA PER RELLANÇAR L'ANIMACIÓ
+                    void elementV.offsetWidth;
+                    void elementH.offsetWidth;
+                    $(".barH,.barV").addClass("anim_forward");
+                    $("li").addClass("anim_forward");
+                } else {
+                    $(".barH,.barV").addClass("anim_forward");  
+                    $("li").addClass("anim_forward");
+                }
+            }
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <form>
+        <input type="hidden" id="clicked" value="false"/>
+    </form>
+    <div class="menu">
+
+        <div class="barV"  id="barV">
+            <div class="circleV">
+                <div class="barH" id="barH">
+                    <div class="innerH">
+                        <ul>
+                            <li><i class="fa fa-home" aria-hidden="true"></i>
+                            </li>
+                            <li><i class="fa fa-id-card-o" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-microchip" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                    <div class="shadow"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="circle">
+            <div id="btnMenu" class="hamburger">
+                <i class="fa fa-navicon" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>

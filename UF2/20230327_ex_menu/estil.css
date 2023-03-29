@@ -1,0 +1,46 @@
+.menu .innerH {
+  position: relative;
+  height: 40px;
+  width: 300px;
+  background-color: lime;
+  transition: width 2s;
+}
+.menu .innerH::after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: 0px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url(tile.jpg);
+}
+.menu:hover .innerH {
+  width: 0%;
+}
+.menu ul {
+  display: flex;
+  background-image: url(tile.jpg);
+  width: auto;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+}
+.menu ul li {
+  min-width: 40px;
+  display: block;
+  background-color: orange;
+  border-radius: 50%;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border: 2px solid black;
+  margin-left: 10px;
+  box-sizing: border-box;
+  z-index: 100;
+}
+.menu ul li i {
+  line-height: 40px;
+}

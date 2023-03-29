@@ -1,0 +1,79 @@
+@keyframes anim_bola_inflable {
+  0% {
+    visibility: visible;
+    transform: scale(1);
+    background-color: #ffffff;
+  }
+  50% {
+    visibility: visible;
+    transform: scale(2);
+    background-color: #fd2222;
+  }
+  100% {
+    visibility: visible;
+    transform: scale(1);
+    background-color: #ffffff;
+  }
+}
+@keyframes anim_bola {
+  0% {
+    transform: translateX(-300px);
+  }
+  16.66% {
+    transform: translateX(0px);
+  }
+  83.333% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(300px);
+  }
+}
+body {
+  position: relative;
+  overflow: hidden;
+  background-color: black;
+}
+body #loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-300px/2, -50%);
+}
+body #loading li,
+body #loading .bola_inflable {
+  top: 0px;
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  transform: translateX(-300px);
+}
+body #loading .bola_inflable {
+  transform: translateX(0px);
+  animation-name: anim_bola_inflable;
+  animation-duration: 16s;
+  animation-delay: 2s;
+  animation-timing-function: steps(4);
+  visibility: hidden;
+}
+body #loading li {
+  animation-name: anim_bola;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+body #loading li:nth-child(1) {
+  animation-delay: 2s;
+}
+body #loading li:nth-child(2) {
+  animation-delay: 4s;
+}
+body #loading li:nth-child(3) {
+  animation-delay: 6s;
+}
+body #loading li:nth-child(4) {
+  animation-delay: 8s;
+}
